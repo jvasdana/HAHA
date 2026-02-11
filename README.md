@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #ffc0cb url('pinkt.jpg') no-repeat center center / cover; /* Gabungan: solid pink + gambar pinkt.jpg */
+            background: #ffc0cb url('pinka.jpg') no-repeat center center / cover; /* Gabungan: solid pink + gambar pinka.jpg */
             text-align: center;
             margin: 0;
             padding: 0;
