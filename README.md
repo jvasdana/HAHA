@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #ffc0cb url('pinka.jpg') no-repeat center center / cover; /* Gabungan: solid pink + gambar pinka.jpg */
+            background: #ffc0cb url('pinkq.gif') no-repeat center center / cover; /* Gabungan: solid pink + gambar pinkq.gif */
             text-align: center;
             margin: 0;
             padding: 0;
@@ -395,10 +395,10 @@
             }, 3000); // Hilang cepat: 3 detik
         }
         
-        // Script: Kucing jatuh
-        function createCat() {
+        // Script: Love jatuh
+        function createLove() {
             const cat = document.createElement("div");
-            cat.className = "cat";
+            cat.className = "Love";
             cat.innerHTML = "❤️"; // Emoji love
             cat.style.left = Math.random() * 100 + "vw"; // Posisi horizontal acak
             cat.style.animationDuration = (1 + Math.random() * 2) + "s"; // Durasi cepat: 4-6 detik
@@ -406,13 +406,13 @@
             document.body.appendChild(love);
             
             setTimeout(() => {
-                cat.remove();
+                Love.remove();
             }, 3000); // Hilang cepat: 3 detik
         }
         
         setInterval(createLine, 400);
         setInterval(createFlower, 100); // Bunga jatuh cepat dan sering
-        setInterval(createCat, 100); // Kucing jatuh cepat dan sering
+        setInterval(createCat, 100); // Love jatuh cepat dan sering
     </script>
 </body>
 </html>
