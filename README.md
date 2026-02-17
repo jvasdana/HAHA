@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -16,21 +15,21 @@
             overflow: hidden;
         }
         .container {
-            padding: 50px;
+            padding: 20px; /* Kurangi padding untuk HP */
             background-color: rgba(255, 255, 255, 0.8); /* Overlay semi-transparan agar teks terbaca */
             border-radius: 10px;
-            margin: 20px auto;
-            max-width: 600px;
+            margin: 10px auto; /* Kurangi margin */
+            max-width: 90%; /* Lebih responsif, gunakan persentase */
             position: relative; /* Agar di atas animasi background */
             z-index: 1; /* Pastikan container di depan */
         }
         h1 {
             color: #ff69b4;
-            font-size: 3em;
+            font-size: 2em; /* Kurangi ukuran font untuk HP */
         }
         .question {
             font-family: 'Fredoka One', cursive; /* Font lucu untuk pertanyaan */
-            font-size: 2em;
+            font-size: 1.5em; /* Kurangi ukuran font */
             margin: 20px 0;
             animation: slideIn 0.5s ease-out; /* Animasi slide in */
         }
@@ -39,15 +38,15 @@
             to { transform: translateX(0); opacity: 1; }
         }
         input {
-            font-size: 1.5em;
+            font-size: 1.2em; /* Kurangi ukuran font */
             padding: 10px;
-            width: 100px;
+            width: 80px; /* Kurangi lebar */
             text-align: center;
         }
         /* Tombol Imut Berbeda-Beda */
         .btn-start {
-            font-size: 1.2em;
-            padding: 15px 30px;
+            font-size: 1em; /* Kurangi ukuran font */
+            padding: 12px 24px; /* Kurangi padding */
             background-color: #ff69b4;
             color: white;
             border: none;
@@ -61,8 +60,8 @@
             transform: scale(1.1);
         }
         .btn-answer {
-            font-size: 1.2em;
-            padding: 10px 20px;
+            font-size: 1em; /* Kurangi ukuran font */
+            padding: 8px 16px; /* Kurangi padding */
             background-color: #32cd32;
             color: white;
             border: none;
@@ -76,8 +75,8 @@
             transform: scale(1.05);
         }
         .btn-oh-yaa {
-            font-size: 1.2em;
-            padding: 12px 25px;
+            font-size: 1em; /* Kurangi ukuran font */
+            padding: 10px 20px; /* Kurangi padding */
             background-color: #ffd700;
             color: #333;
             border: none;
@@ -91,8 +90,8 @@
             transform: scale(1.1);
         }
         .btn-mau {
-            font-size: 1.2em;
-            padding: 10px 20px;
+            font-size: 1em; /* Kurangi ukuran font */
+            padding: 8px 16px; /* Kurangi padding */
             background-color: #ff4500;
             color: white;
             border: none;
@@ -106,8 +105,8 @@
             transform: scale(1.05);
         }
         .btn-tidak {
-            font-size: 1.2em;
-            padding: 10px 20px;
+            font-size: 1em; /* Kurangi ukuran font */
+            padding: 8px 16px; /* Kurangi padding */
             background-color: #1e90ff;
             color: white;
             border: none;
@@ -125,8 +124,8 @@
         }
         .firework {
             position: absolute;
-            width: 10px;
-            height: 10px;
+            width: 8px; /* Kurangi ukuran untuk HP */
+            height: 8px;
             background-color: red;
             border-radius: 50%;
             animation: explode 2s ease-out forwards;
@@ -134,11 +133,11 @@
         }
         @keyframes explode {
             0% { transform: scale(1); opacity: 1; }
-            100% { transform: scale(10); opacity: 0; }
+            100% { transform: scale(8); opacity: 0; } /* Kurangi skala */
         }
         .celebration {
             font-family: 'Fredoka One', cursive; /* Font lucu untuk pesan akhir */
-            font-size: 2em;
+            font-size: 1.5em; /* Kurangi ukuran font */
             color: #ff69b4;
             animation: bounce 1s infinite;
         }
@@ -149,7 +148,7 @@
         }
         .wow-message {
             font-family: 'Fredoka One', cursive; /* Font lucu untuk pesan imut */
-            font-size: 2.5em;
+            font-size: 2em; /* Kurangi ukuran font */
             color: #ff69b4;
             animation: bounce 1s infinite, sparkle 1s infinite; /* Bounce dan sparkle */
             position: relative;
@@ -178,19 +177,19 @@
         }
         .from-message {
             font-family: 'Fredoka One', cursive; /* Font lucu untuk bagian Dari */
-            font-size: 1.5em;
+            font-size: 1.2em; /* Kurangi ukuran font */
             color: #333;
             margin-top: 10px;
         }
         .gift-question {
             font-family: 'Fredoka One', cursive; /* Font imut untuk pertanyaan hadiah */
-            font-size: 2em;
+            font-size: 1.5em; /* Kurangi ukuran font */
             color: #ff69b4;
             margin: 20px 0;
         }
         .gift-message {
             font-family: 'Fredoka One', cursive; /* Font imut untuk pesan hadiah */
-            font-size: 1.8em;
+            font-size: 1.4em; /* Kurangi ukuran font */
             color: #333;
             margin: 20px 0;
         }
@@ -218,7 +217,7 @@
         .flower {
             position: absolute;
             color: #ff4d88;
-            font-size: 24px;
+            font-size: 20px; /* Kurangi ukuran */
             animation: fall linear infinite;
             opacity: 0.8;
             z-index: 0; /* Di belakang container */
@@ -237,44 +236,45 @@
         /* Animasi: Love jatuh */
         .love {
             position: absolute;
-            font-size: 30px;
+            font-size: 24px; /* Kurangi ukuran */
             animation: fall linear infinite;
             opacity: 0.9;
             z-index: 0; /* Di belakang container */
         }
         
-        /* Responsivitas untuk HP (layar kecil) */
-        @media (max-width: 768px) {
+        /* Media query untuk layar kecil (HP) */
+        @media (max-width: 600px) {
             .container {
-                padding: 20px; /* Kurangi padding */
-                margin: 10px; /* Kurangi margin */
-                max-width: 90%; /* Lebih lebar di HP */
+                padding: 15px;
+                margin: 5px auto;
             }
             h1 {
-                font-size: 2em; /* Kurangi ukuran judul */
+                font-size: 1.8em;
             }
             .question {
-                font-size: 1.5em; /* Kurangi ukuran pertanyaan */
+                font-size: 1.3em;
             }
-            .celebration, .wow-message, .gift-question, .gift-message {
-                font-size: 1.5em; /* Kurangi ukuran pesan */
+            .wow-message {
+                font-size: 1.8em;
             }
-            .from-message {
-                font-size: 1.2em; /* Kurangi ukuran dari */
+            .celebration {
+                font-size: 1.3em;
             }
-            input {
-                width: 80px; /* Kurangi lebar input */
+            .gift-question {
+                font-size: 1.3em;
+            }
+            .gift-message {
                 font-size: 1.2em;
             }
+            .from-message {
+                font-size: 1em;
+            }
+            input {
+                width: 60px;
+            }
             .btn-start, .btn-answer, .btn-oh-yaa, .btn-mau, .btn-tidak {
-                font-size: 1em; /* Kurangi ukuran tombol */
-                padding: 10px 15px; /* Kurangi padding tombol */
-            }
-            img {
-                max-width: 200px; /* Kurangi ukuran gambar */
-            }
-            .flower, .love {
-                font-size: 20px; /* Kurangi ukuran emoji jatuh */
+                font-size: 0.9em;
+                padding: 10px 20px;
             }
         }
     </style>
@@ -284,7 +284,7 @@
         <!-- Bagian Awal: Judul, Gambar, Tombol Ayo Main!! -->
         <div id="intro">
             <h1>Selamat Ulang Tahun, Shafa Amanah!!!</h1>
-            <img src="2.gif" alt="Gambar Ulang Tahun" style="max-width: 300px; border-radius: 10px; margin: 20px 0;">
+            <img src="2.gif" alt="Gambar Ulang Tahun" style="max-width: 100%; height: auto; border-radius: 10px; margin: 20px 0;"> <!-- Responsif -->
             <button class="btn-start" onclick="startQuiz()">Ayo Main!!</button>
         </div>
         
@@ -358,13 +358,21 @@
                         document.getElementById('wow').classList.add('hidden');
                         // Efek ledakan
                         explodeFireworks();
-                        // Suara petasan
-                        const fireworkSound = new Audio('petasan.mp3');
-                        fireworkSound.play();
-                        // Tunggu sedikit lalu mainkan lagu
+                        // Suara petasan (opsional, pastikan file ada)
+                        try {
+                            const fireworkSound = new Audio('petasan.mp3');
+                            fireworkSound.play();
+                        } catch (e) {
+                            console.log('Suara petasan tidak ditemukan');
+                        }
+                        // Tunggu sedikit lalu mainkan lagu (opsional)
                         setTimeout(() => {
-                            const birthdaySong = new Audio('hbdeee.mp3');
-                            birthdaySong.play();
+                            try {
+                                const birthdaySong = new Audio('hbdeee.mp3');
+                                birthdaySong.play();
+                            } catch (e) {
+                                console.log('Lagu ulang tahun tidak ditemukan');
+                            }
                         }, 2000); // 2 detik setelah ledakan
                         // Tampilkan pesan akhir
                         document.getElementById('celebration').classList.remove('hidden');
@@ -376,7 +384,7 @@
         }
         
         function explodeFireworks() {
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 15; i++) { // Kurangi jumlah untuk performa HP
                 const firework = document.createElement('div');
                 firework.classList.add('firework');
                 firework.style.left = Math.random() * 100 + 'vw';
@@ -422,4 +430,17 @@
             flower.className = "flower";
             flower.innerHTML = "🌸"; // Emoji bunga
             flower.style.left = Math.random() * 100 + "vw";
-            flower.style.animationDuration = (
+            flower.style.animationDuration = (1 + Math.random() * 2) + "s"; // Durasi cepat: 1-3 detik
+            flower.style.fontSize = (16 + Math.random() * 30) + "px";
+            document.body.appendChild(flower);
+            
+            setTimeout(() => {
+                flower.remove();
+            }, 3000); // Hilang cepat: 3 detik
+        }
+        
+         setInterval(createLine, 400);
+         setInterval(createFlower, 100); // Bunga jatuh cepat dan sering
+    </script>
+</body>
+</html>
