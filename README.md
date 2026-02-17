@@ -6,21 +6,27 @@
     <!-- Import Google Font untuk font lucu -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: Arial, sans-serif;
             background: #ffc0cb url('pinkq.gif') no-repeat center center / cover; /* Gabungan: solid pink + gambar pinkq.gif */
+            background-attachment: fixed; /* Agar background tetap saat scroll, tapi untuk mobile mungkin perlu penyesuaian */
             text-align: center;
-            margin: 0;
-            padding: 0;
             overflow: hidden;
         }
         .container {
             padding: 20px; /* Kurangi padding untuk HP */
             background-color: rgba(255, 255, 255, 0.8); /* Overlay semi-transparan agar teks terbaca */
             border-radius: 10px;
-            margin: 10px auto; /* Kurangi margin */
             max-width: 90%; /* Lebih responsif, gunakan persentase */
-            position: relative; /* Agar di atas animasi background */
+            position: absolute; /* Untuk centering di tengah layar */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centering horizontal dan vertikal */
             z-index: 1; /* Pastikan container di depan */
         }
         h1 {
@@ -246,7 +252,6 @@
         @media (max-width: 600px) {
             .container {
                 padding: 15px;
-                margin: 5px auto;
             }
             h1 {
                 font-size: 1.8em;
