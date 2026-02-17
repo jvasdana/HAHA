@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -233,13 +234,48 @@
             }
         }
         
-        /* Animasi: Kucing jatuh */
-        .cat {
+        /* Animasi: Love jatuh */
+        .love {
             position: absolute;
             font-size: 30px;
             animation: fall linear infinite;
             opacity: 0.9;
             z-index: 0; /* Di belakang container */
+        }
+        
+        /* Responsivitas untuk HP (layar kecil) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px; /* Kurangi padding */
+                margin: 10px; /* Kurangi margin */
+                max-width: 90%; /* Lebih lebar di HP */
+            }
+            h1 {
+                font-size: 2em; /* Kurangi ukuran judul */
+            }
+            .question {
+                font-size: 1.5em; /* Kurangi ukuran pertanyaan */
+            }
+            .celebration, .wow-message, .gift-question, .gift-message {
+                font-size: 1.5em; /* Kurangi ukuran pesan */
+            }
+            .from-message {
+                font-size: 1.2em; /* Kurangi ukuran dari */
+            }
+            input {
+                width: 80px; /* Kurangi lebar input */
+                font-size: 1.2em;
+            }
+            .btn-start, .btn-answer, .btn-oh-yaa, .btn-mau, .btn-tidak {
+                font-size: 1em; /* Kurangi ukuran tombol */
+                padding: 10px 15px; /* Kurangi padding tombol */
+            }
+            img {
+                max-width: 200px; /* Kurangi ukuran gambar */
+            }
+            .flower, .love {
+                font-size: 20px; /* Kurangi ukuran emoji jatuh */
+            }
         }
     </style>
 </head>
@@ -382,37 +418,4 @@
         
         // Script: Bunga jatuh
         function createFlower() {
-            const flower = document.createElement("div");
-            flower.className = "flower";
-            flower.innerHTML = "🌸"; // Emoji bunga
-            flower.style.left = Math.random() * 100 + "vw";
-            flower.style.animationDuration = (1 + Math.random() * 2) + "s"; // Durasi cepat: 1-3 detik
-            flower.style.fontSize = (16 + Math.random() * 30) + "px";
-            document.body.appendChild(flower);
-            
-            setTimeout(() => {
-                flower.remove();
-            }, 3000); // Hilang cepat: 3 detik
-        }
-        
-        // Script: Love jatuh
-        function createLove() {
-            const cat = document.createElement("div");
-            cat.className = "Love";
-            cat.innerHTML = "❤️"; // Emoji love
-            cat.style.left = Math.random() * 100 + "vw"; // Posisi horizontal acak
-            cat.style.animationDuration = (1 + Math.random() * 2) + "s"; // Durasi cepat: 4-6 detik
-            cat.style.fontSize = (20 + Math.random() * 20) + "px"; // Ukuran acak
-            document.body.appendChild(love);
-            
-            setTimeout(() => {
-                Love.remove();
-            }, 3000); // Hilang cepat: 3 detik
-        }
-        
-        setInterval(createLine, 400);
-        setInterval(createFlower, 100); // Bunga jatuh cepat dan sering
-        setInterval(createLove, 100); // Love jatuh cepat dan sering
-    </script>
-</body>
-</html>
+            const flower = document.create
