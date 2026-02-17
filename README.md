@@ -280,8 +280,8 @@
         
         <!-- Efek Ledakan dan Pesan Akhir -->
         <div id="celebration" class="hidden">
-            <p class="celebration">Selamat Ulang Tahun!!!</p>
-            <p>Semoga hari ini penuh kebahagiaan dan tahun depan lebih baik lagi. Terima kasih atas segalanya!</p>
+            <p class="celebration">Happy birthday bestie!!!</p>
+            <p> Semoga panjang umur, sehat terus, rezeki lo banjir, dan hidup lo makin naik level. Semua yang lagi lo incar tahun ini wajib lo penggal lah, gebuk lah taklukkan lah, pokoknya harus lo capai. INGET!! H A R U S. gagal? NGGAK BOLEH!! HARUS BISA!! Pokoknya tahun ini lo harus hancurin semua target dan buktiin kalau lo emang ratunya. 🔥             Anjaaay</p>
             <p class="from-message">Dari: [Orang Gila]</p>
             <button class="btn-oh-yaa" onclick="showGiftQuestion()">Oh yaa!!</button>
         </div>
@@ -412,7 +412,7 @@
         
         setInterval(createLine, 400);
         setInterval(createFlower, 100); // Bunga jatuh cepat dan sering
-        setInterval(createCat, 100); // Love jatuh cepat dan sering
+        setInterval(createLove, 100); // Love jatuh cepat dan sering
     </script>
 </body>
 </html>
