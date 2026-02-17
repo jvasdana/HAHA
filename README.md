@@ -418,4 +418,8 @@
         
         // Script: Bunga jatuh
         function createFlower() {
-            const flower = document.create
+            const flower = document.createElement("div");
+            flower.className = "flower";
+            flower.innerHTML = "🌸"; // Emoji bunga
+            flower.style.left = Math.random() * 100 + "vw";
+            flower.style.animationDuration = (
