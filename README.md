@@ -13,7 +13,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background: #ffc0cb url('pinkq.gif') no-repeat center center / cover; /* Gabungan: solid pink + gambar pinkq.gif */
+            background: #ffc0cb url('pinti.png') no-repeat center center / cover; /* Gabungan: solid pink + gambar pinti.png */
             background-attachment: fixed; /* Agar background tetap saat scroll, tapi untuk mobile mungkin perlu penyesuaian */
             text-align: center;
             overflow: hidden;
