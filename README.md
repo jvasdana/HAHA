@@ -250,9 +250,6 @@
         
         /* Media query untuk layar kecil (HP) */
         @media (max-width: 600px) {
-            body {
-                background-attachment: scroll; /* Ubah ke scroll untuk mencegah gerakan background di HP */
-            }
             .container {
                 padding: 15px;
             }
