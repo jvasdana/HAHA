@@ -320,7 +320,7 @@
         
         <!-- Pesan Hadiah Akhir -->
         <div id="gift-message" class="hidden">
-            <p class="gift-message">oke!!:) DM gua yaa. bilang aja "NUKI!!!" oke 😁😁. Jangan mokel!!</p>
+            <p class="gift-message">Ooii harus mau doongss:) DM gua yaa. bilang aja "NUKI!!!" oke 😁😁. Jangan mokel!!</p>
         </div>
     </div>
     
