@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +15,7 @@
         body {
             font-family: Arial, sans-serif;
             background: #ffc0cb url('pinti.png') no-repeat center center / cover; /* Gabungan: solid pink + gambar pinti.png */
-            background-attachment: fixed; /* Agar background tetap saat scroll, tapi untuk mobile mungkin perlu penyesuaian */
+            background-attachment: fixed; /* Agar background tetap saat scroll */
             text-align: center;
             overflow: hidden;
         }
@@ -95,35 +96,20 @@
             background-color: #ffed4e;
             transform: scale(1.1);
         }
-        .btn-mau {
+        .btn-iya {
             font-size: 1em; /* Kurangi ukuran font */
-            padding: 8px 16px; /* Kurangi padding */
-            background-color: #ff4500;
+            padding: 10px 30px; /* Padding lebih besar agar terlihat */
+            background-color: #ff69b4;
             color: white;
             border: none;
-            border-radius: 15px; /* Sudut bulat */
+            border-radius: 25px; /* Bulat */
             cursor: pointer;
-            box-shadow: 0 4px 8px rgba(255, 69, 0, 0.3);
+            box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
             transition: all 0.3s ease;
         }
-        .btn-mau:hover {
-            background-color: #dc143c;
-            transform: scale(1.05);
-        }
-        .btn-tidak {
-            font-size: 1em; /* Kurangi ukuran font */
-            padding: 8px 16px; /* Kurangi padding */
-            background-color: #1e90ff;
-            color: white;
-            border: none;
-            border-radius: 25px; /* Oval panjang */
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(30, 144, 255, 0.3);
-            transition: all 0.3s ease;
-        }
-        .btn-tidak:hover {
-            background-color: #0066cc;
-            transform: scale(1.05);
+        .btn-iya:hover {
+            background-color: #ff1493;
+            transform: scale(1.1);
         }
         .hidden {
             display: none;
@@ -277,7 +263,7 @@
             input {
                 width: 60px;
             }
-            .btn-start, .btn-answer, .btn-oh-yaa, .btn-mau, .btn-tidak {
+            .btn-start, .btn-answer, .btn-oh-yaa, .btn-iya {
                 font-size: 0.9em;
                 padding: 10px 20px;
             }
@@ -288,7 +274,7 @@
     <div class="container">
         <!-- Bagian Awal: Judul, Gambar, Tombol Ayo Main!! -->
         <div id="intro">
-            <h1>Selamat Ulang Tahun, Shafa Amanah!!!</h1>
+            <h1>Happy Birthday, Shafa Amanah!!!</h1>
             <img src="2.gif" alt="Gambar Ulang Tahun" style="max-width: 100%; height: auto; border-radius: 10px; margin: 20px 0;"> <!-- Responsif -->
             <button class="btn-start" onclick="startQuiz()">Ayo Main!!</button>
         </div>
@@ -327,16 +313,15 @@
             <button class="btn-oh-yaa" onclick="showGiftQuestion()">Oh yaa!!</button>
         </div>
         
-        <!-- Pertanyaan Hadiah -->
+        <!-- Pertanyaan Hadiah (Hanya Tombol Iya) -->
         <div id="gift-question" class="hidden">
             <p class="gift-question">Mau hadiah gak??</p>
-            <button class="btn-mau" onclick="showGiftMessage(true)">Mau</button>
-            <button class="btn-tidak" onclick="showGiftMessage(false)">Tidak</button>
+            <button class="btn-iya" onclick="showGiftMessage()">Iya</button>
         </div>
         
         <!-- Pesan Hadiah Akhir -->
         <div id="gift-message" class="hidden">
-            <p class="gift-message" id="final-message"></p>
+            <p class="gift-message">oke!!:) DM gua yaa. bilang aja "NUKI!!!" oke 😁😁. Jangan mokel!!</p>
         </div>
     </div>
     
@@ -405,14 +390,8 @@
             document.getElementById('gift-question').classList.remove('hidden');
         }
         
-        function showGiftMessage(wantsGift) {
+        function showGiftMessage() {
             document.getElementById('gift-question').classList.add('hidden');
-            const messageElement = document.getElementById('final-message');
-            if (wantsGift) {
-                messageElement.innerHTML = "oke!!:) DM gua pake emoji 🎁";
-            } else {
-                messageElement.innerHTML = "Ouu oke semangat belajarnya ya! Jangan Mokel!!";
-            }
             document.getElementById('gift-message').classList.remove('hidden');
         }
         
@@ -444,8 +423,8 @@
             }, 3000); // Hilang cepat: 3 detik
         }
         
-         setInterval(createLine, 400);
-         setInterval(createFlower, 100); // Bunga jatuh cepat dan sering
+        setInterval(createLine, 400);
+        setInterval(createFlower, 100); // Bunga jatuh cepat dan sering
     </script>
 </body>
 </html>
